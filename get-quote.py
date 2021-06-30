@@ -1,7 +1,7 @@
 import random
 
 
-def primary():
+def main():
     print("Keep it logically awesome.")
     f = open("quotes.txt")
     quotes = f.readlines()
@@ -12,7 +12,8 @@ def primary():
     print("What was is the file:")
     for i in list(range(len(quotes))):
         print(str(i + 1) + ". " + (quotes[i]))
+    print("Change has occurred")
 
 
 if __name__ == "__main__":
-    primary()
+    main()
